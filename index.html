@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/my_portfolio.css">
+</head>
+    <!-- Body -->
+    <body class="Background">
+
+            <!-- Navbar -->
+            <div class="Navbar">
+                <a class="active" href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+            <!-- Video Background -->
+            <div id="Home">
+                <video autoplay muted loop id="Back_Vid">
+                    <source src="./Vid/office_back.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Video Overlay Text -->
+            <div class="Video_Text">
+                <h1 class="white-text">Eduardo's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                            <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                            <br>field of battle and to command such unswervingly dutiful actors or troops.</q>
+                        </q>
+                        <br> -Joseph Weizenbaum
+                        <br>
+                        <br> My name is Eduardo. Welcome to my portfolio website. On it I will tell you about my background and experience.
+                        <br>
+                        <br> Thank you for stopping by and enjoy!
+                    </p>
+                </strong>
+            </div>
+
+            <!-- About -->
+            <div class="Row" id="About">
+                <!-- Left Column -->
+                <div class="Column_1">
+                    <h1>About</h1>
+                    <p>
+                        Currently, I am a student pursuing software development. I love to spend my time with friends and family, watching and playing sports but most importantly coding!
+                        <br>
+                        <br>I am attending <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>. During my time I am learning HTML, CSS, JavaScript, Database, SQL, C#, and C++.
+                        <br>
+                        <br>I am a full time student who is eager to learn more about software development and would be honored to work with you on your project.
+                    </p>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="Column_2">
+                <img src="./Img/morning_work.jpg" alt="">
+            </div>
+
+            <!-- Github -->
+            <div class="Row" id="Github">
+                <!-- Left Column -->
+                <div class="Column_2">
+                    <a href="https://github.com/emfig" target="_blank"><img src="./Img/git_pic.png" alt=""></a>
+                </div>
+                <!-- Right Column -->
+                <div class="Column_1">
+                    <h1>Github</h1>
+                    <p>
+                        You can view all my projects on my Github profile here:
+                        <br>
+                        <p class="center"><a href="https://github.com/emfig" target="_blank">My Github</a></p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="Row" id="Contact">
+                <!-- Contact form, Left Column -->
+                <div class="Column_1 Column_tall">
+                    <h1>Contact</h1>
+                    <form action="https://formspree.io/f/xayzavkp" method="POST">
+                        <label>Name:</label>
+                            <input type="text" placeholder="Enter your name here">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Enter your email here">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Write your message here">
+                            <input type="submit" value="SUBMIT">
+                    </form>
+                </div>
+                <!-- Conatct Image, Right Column-->
+                <div class="Column_2 Column_tall">
+                    <img src="./Img/contact.jpg" alt="">
+                </div>
+            </div>
+                
+            <!-- Footer -->
+            <footer>
+                <p>
+                    <br>
+                    <br>
+                    <p class="center"><a href="https://github.com/emfig" target="_blank">GitHub</a></p>
+                    <br>
+                </p>
+            </footer>
+    </body>
+</html>
