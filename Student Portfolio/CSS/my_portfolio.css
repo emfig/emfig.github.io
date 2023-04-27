@@ -1,0 +1,250 @@
+/*** GENERAL STYLE ***/
+/* Body */
+body {
+    margin: 0%;
+}
+
+/* Heading 1 Style */
+h1 {
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 3%;
+    color: black;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.white-text {
+    color: coral;
+}
+
+/* Paragraph Style */
+p {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: justify;
+   letter-spacing: 1px;
+   font-size: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Anchor Style */
+a {
+    color: blue;
+}
+
+/* Quote Style */
+q {
+    font-style: italic;
+}
+
+/* Image Style */
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Image Hover */
+img:hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Footer Style */
+footer {
+    padding: 2%;
+    background-color: white;
+}
+/*** END OF GENERAL STYLE ***/
+
+/*** NAVBAR STYLE ***/
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: movenav 4s;
+    animation: movenav 4s;
+}
+
+@keyframes movenav {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: bisque;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: movenavText 5.75s;
+    animation: movenavText 5.75s;
+}
+
+@keyframes movenavText {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+/* Navbar Hover */
+.Navbar a:hover {
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+}
+/*** END NAVBAR STYLE ***/
+
+/*** VIDEO STYLE ***/
+/* Background Video Style */
+#Back_Vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;   
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #Back_Vid {
+        display: none;
+    }
+}
+
+/* Text over Video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+/*** END VIDEO STYLE ***/
+
+/*** TABLE STYLE ***/
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: none;
+    display: table;
+    clear: both;
+}
+/*** END TABLE STYLING ***/
+
+/*** CONTACT FORM STYLE ***/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Input Box Hover */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #000000 inset;
+}
+
+/* Submit Button */
+input[type=submit] {
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Submit Button Hover */
+input[type=submit]:hover {
+    background-color: white;
+    color: darkslategray;
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*** END CONTACT FORM STYLE ***/
